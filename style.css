@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+  font-family: "proxima_nova_rgregular", sans-serif;
+  font-size: 16px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #292019;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #292019;
+}
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-flow: row wrap;
+  margin: auto;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* ******For Webkit (Chrome, Safari, Opera)***************** */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* For Firefox */
+/* ----------CSS Loading Section----------- */
+/* Style for the loader */
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* Semi-transparent white background */
+  z-index: 1000; /* Higher z-index to ensure it's above other content */
+}
+
+/* Style for the spinning animation */
+.loader .spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #ffce53);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+}
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* -----------End of CSS Loading Section---------- */
+/* -----------Header Section----------- */
+
+nav {
+  width: 100%;
+  padding: 0.6rem 0;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+  z-index: 11;
+}
+.home {
+  scroll-behavior: smooth;
+  scroll-margin-top: 50px;
+}
+.logo {
+  width: 150px;
+}
+.logo img {
+  width: 100%;
+}
+.nav-bar {
+  width: 90%;
+  margin: auto;
+}
+.menu-bar {
+  justify-content: space-between;
+  width: 50%;
+  padding: 0.7rem 0;
+}
+header .primary-btn {
+  padding: 0.4rem 1rem 0.4rem 2.5rem;
+}
+.primary-btn {
+  background-color: #f6f9e1;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  border: 1.5px solid #ffce53;
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+  text-transform: uppercase;
+  color: #a8bbfa;
+  display: inline-flex;
+  align-items: center;
+  & i {
+    font-size: 1.5rem;
+  }
+  /* &:hover {
+  } */
+}
+.primary-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgb(153, 148, 148, 0.2);
+  opacity: 0; /* Initial opacity set to 0 */
+  transform: translateY(2rem);
+  transition: opacity 0.3s, transform 0.3s;
+  transform-origin: bottom;
+}
+nav a:hover,
+nav a.active {
+  color: #ffce53;
+  font-weight: 700;
+}
+.primary-btn:hover::after {
+  /* background-color: #f6f9e1; */
+  /* border: 2px solid #ffce53;
+  transition: background-color 1s; */
+  opacity: 1; /* Set opacity to 1 on hover */
+  transform: translateY(0);
+  height: 100%;
+}
+/* ----------End of Header Section------------------ */
+/* -------------Hero Section--------------- */
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url(images/heroBg.webp);
+  background-position: 20% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 5%;
+  margin-top: 4rem;
+  position: relative;
+}
+.hero-tag {
+  display: inline;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 0.4rem;
+  font-weight: 500;
+  background-color: #ffce53;
+}
+.hero-title {
+  font-size: 6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.sub-hero-title {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.card {
+  width: 50%;
+  padding: 1rem 0;
+  font-weight: 400;
+  padding-right: 3rem;
+}
+.hero .flex-container {
+  flex-direction: row;
+}
+.hero-image-holder {
+  width: 600px;
+  height: 350px;
+  background-image: url(images/heroImage.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 15rem;
+  right: 5%;
+}
+.hero-image-holder::before {
+  content: "";
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/boxBg.webp);
+  background-repeat: no-repeat;
+  top: 18rem;
+  right: 1.5rem;
+  z-index: -1;
+  opacity: 0.7;
+}
+/* -------------End of Hero Section--------------- */
+/* ---------About Section----------- */
+.about {
+  margin: 8rem 0 0 0;
+  padding: 4rem 5%;
+  scroll-behavior: smooth;
+  scroll-margin-top: 50px;
+}
+.about .flex-row {
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+.about-title {
+  font-weight: 500;
+  color: #4d4b4b;
+}
+.about-text {
+  position: relative;
+}
+.about-card:nth-child(1) {
+  width: 10%;
+}
+.about-card {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #4d4b4b;
+  text-align: justify;
+  width: 80%;
+}
+.bullet-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4d4b4b;
+}
+/* -----------End of About Section------------- */
+/* Pop-up Dialog */
+
+dialog {
+  width: 80%;
+  height: 90vh;
+  padding: 2rem;
+  border: none;
+  margin: auto;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  position: fixed;
+}
+#close {
+  position: absolute;
+  right: 2rem;
+}
+#close i {
+  font-size: 2rem;
+  border: none;
+  background-color: none;
+}
+
+.dialog-content h2 {
+  margin-bottom: 2rem;
+  border-bottom: 2px rgba(0, 0, 0, 0.1) solid;
+}
+.dialog-content {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #4d4b4b;
+  text-align: justify;
+}
+::backdrop {
+  background-color: rgb(189, 188, 188, 0.5);
+}
+
+/* End of Pop-up Dialog */
+.stat-card {
+  margin: 2rem 0 1rem 0;
+  flex-basis: 200px;
+  flex-grow: 1;
+  padding-left: 1rem;
+  border-left: 2px rgba(0, 0, 0, 0.1) solid;
+}
+.stat-title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.stat-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* -------------Practice Section----- */
+.practice {
+  width: 100%;
+  padding: 2rem 5%;
+  scroll-behavior: smooth;
+  scroll-margin-top: 50px;
+  background-color: #f6f9e1;
+}
+.practice-title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 2rem;
+  text-align: center;
+}
+.practice-card {
+  flex-basis: 300px;
+  height: 400px;
+  max-height: 400px;
+  flex-grow: 1;
+  padding: 1rem;
+  text-align: justify;
+}
+.practice-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.icon-holder {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #a8bbfa;
+  position: relative;
+}
+.practice-box .flex-row {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.practice-card:hover {
+  color: white;
+  background-color: #a8bbfa;
+}
+.practice-card:hover .icon-holder {
+  background-color: #ffce53;
+}
+.material-icons {
+  font-size: 481px;
+  color: black;
+}
+.custom-size {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 480px; /* Change the size as needed */
+}
+.custom-s {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  margin-inline-end: 3rem;
+  /* margin-inline-start: 0.9rem; */
+  font-size: 480px; /* Change the size as needed */
+}
+.practice-title-card {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* ---------End of Practice Section--------- */
+/* ---------Lawyers Section--------- */
+.lawyers {
+  width: 100%;
+  padding: 3rem 5%;
+  scroll-behavior: smooth;
+  scroll-margin-top: 50px;
+  /* background-color: #d8dff7; */
+}
+.lawyers-title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 2rem;
+  text-align: center;
+}
+.lawyers-container {
+  margin-block-start: 2rem;
+  position: relative;
+}
+.lawyer-card {
+  flex-basis: 450px;
+  flex-grow: 1;
+  margin: 2rem 0;
+}
+.law-img-holder {
+  width: 80%;
+  height: 400px;
+  position: relative;
+}
+.law-img-holder::after {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: -3rem;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/imgHolderBg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.law-img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.lawyers-container .flex-row {
+  justify-content: flex-start;
+}
+.tab {
+  flex-basis: 200px;
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #d8dff7;
+  border: 0.5px solid white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.tab.active {
+  background: var(--clr-white);
+  color: #fff;
+  border-top: 2px solid #d8dff7;
+  border-right: 2px solid #d8dff7;
+  border-bottom: none;
+  border-left: 2px solid #d8dff7;
+}
+
+.tab-content {
+  border: 2px solid #d8dff7;
+  border-top: none;
+  border-bottom: none;
+  display: none;
+}
+.tab-content.active {
+  display: block;
+  position: relative;
+}
+
+.mini-profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: -2rem;
+  display: none;
+}
+.mini-profile-pic.active {
+  display: block;
+}
+.mini-profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.lawyer-profile {
+  margin-block-start: 1rem;
+  margin-inline-end: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #484747;
+}
+/* -------------End of Lawyers Section------------ */
+/* ---------Property Listing Section----------- */
+.listing {
+  width: 100%;
+  margin-block-end: 2rem;
+  scroll-margin-top: 50px;
+}
+.listing-side {
+  margin: 3rem 5%;
+}
+.listing-card {
+  flex-basis: 200px;
+  flex-grow: 1;
+  border-radius: 16px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+  }
+}
+.listing .flex-container {
+  gap: 2rem;
+}
+.listing-img-holder {
+  width: 100%;
+  height: 300px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+}
+.listing-title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: 1rem;
+  text-align: center;
+}
+.sub-listing-title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1rem;
+  text-align: center;
+}
+.listing-context-box {
+  padding: 1rem;
+}
+.listing-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #ffce53;
+  display: inline;
+  padding: 0.3rem;
+  text-transform: uppercase;
+}
+.listing-card-text {
+  margin-block-start: 0.5rem;
+  text-align: justify;
+}
+.listing .primary-btn,
+.contact .primary-btn {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ------------End of Property Listing Section------------- */
+/* -----------Contact Section-------------------- */
+.contact {
+  margin-block-start: 5rem;
+  /* margin-block-end: 2rem; */
+  width: 100%;
+  scroll-margin-top: 70px;
+}
+.upper-contact {
+  width: 100%;
+  height: 50vh;
+  background-image: url(images/contactBG.png);
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 5%;
+}
+.map-contact {
+  width: 100%;
+  height: 45vh;
+}
+.contact-card {
+  position: relative;
+  flex-basis: 320px;
+  flex-grow: 1;
+}
+.card-text {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.contact .flex-container {
+  gap: 2rem;
+}
+.location {
+  position: absolute;
+  bottom: -1.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+/* -----------------End of Contact Section---------------- */
+/* --------------Footer Section------------------ */
+footer {
+  width: 100%;
+  padding: 2rem 5%;
+  background-color: #1b1725;
+  color: rgb(182, 177, 177);
+  font-size: 14px;
+}
+footer .flex-container {
+  gap: 2rem;
+}
+.footer-logo {
+  width: 60%;
+}
+.footer-card {
+  flex-basis: 320px;
+  flex-grow: 1;
+}
+footer ul li a {
+  color: rgb(182, 177, 177);
+}
+.social-holder {
+  width: 25px;
+  height: 25%;
+  /* position: relative; */
+  margin-right: 5px;
+  border: 1px solid white;
+  &:hover {
+    background-color: white;
+  }
+}
+.social-holder i {
+  margin: 5px;
+  &:hover {
+    color: #1b1725;
+  }
+}
+footer li .flex-row {
+  justify-content: center;
+  align-items: center;
+}
+footer ul li:nth-child(1) {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: white;
+}
+/* ----------------End of Footer Section------------ */

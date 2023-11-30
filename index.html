@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUE Efetie</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Loader div -->
+    <!-- <div class="loader">
+      <div class="spinner"></div>
+    </div> -->
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="flex-row nav-bar" aria-label="navigation">
+          <div class="logo" aria-label="logo">
+            <img src="images/primary-logo.png" alt="" />
+          </div>
+          <ul class="flex-row menu-bar" aria-label="menu-bar">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#practice">practice area</a></li>
+            <li><a href="#lawyers">our lawyers</a></li>
+            <li><a href="#listing">property listing</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <div class="primary-btn" aria-label="primary-btn">
+            <span class="material-symbols-outlined custom-s"> call </span>
+            Call Us Today
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Header -->
+    <!-- Hero Section -->
+    <section class="hero" aria-label="hero" id="home">
+      <div class="hero-tag" aria-label="hero-tag">#1 law firm in Nigeria</div>
+      <div class="hero-title flex-row" aria-label="hero-title">
+        Legal Expertise, Real Estate Excellence.
+      </div>
+      <div class="sub-hero-title" aria-label="sub-hero-title">
+        We raise the <sup>bar</sup>
+      </div>
+      <div class="text-exerp-hero flex-row">
+        <div class="flex-container">
+          <div class="card">
+            Delivering unparalleled legal expertise and real estate excellence,
+            our firm stands as a beacon of reliability and proficiency. With a
+            team of seasoned legal professionals and real estate specialists, we
+            bring a comprehensive understanding of the law and a keen insight
+            into the property market.
+          </div>
+          <div class="card"></div>
+        </div>
+      </div>
+      <div class="primary-btn" tabindex="1">
+        <i class="bx bxl-whatsapp"></i>Free Consultation
+      </div>
+      <div class="hero-image-holder" role="img"></div>
+    </section>
+    <!-- End of Hero Section -->
+    <!-- About Section -->
+    <section class="about" id="about" aria-label="about-section">
+      <div class="about-title flex-row">
+        <div class="bullet-point"></div>
+        About Us
+      </div>
+      <div class="flex-row">
+        <div class="about-text flex-container">
+          <div class="about-card"></div>
+          <div class="about-card">
+            Our firm is a dynamic fusion of seasoned legal professionals and
+            dedicated real estate experts, offering a comprehensive suite of
+            services designed to meet all your legal and property needs. At the
+            core of our practice is a team of accomplished attorneys, each
+            bringing a wealth of knowledge and experience in diverse legal
+            domains. We specialize in providing meticulous legal solutions
+            tailored to your unique requirements. From navigating complex legal
+            landscapes to crafting airtight contracts, we are committed to
+            ensuring that your legal concerns are met with precision and
+            expertise...
+            <div class="primary-btn" id="primary-btn" aria-label="primary-btn">
+              Read More
+            </div>
+            <div class="sub-about-text flex-row">
+              <div class="flex-container">
+                <div class="stat-card">
+                  <div class="stat-title">1000+</div>
+                  <div class="stat-text">We have faced law cases</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-title">25+</div>
+                  <div class="stat-text">Years of experience</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-title">95%</div>
+                  <div class="stat-text">Case win record</div>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-title">500+</div>
+                  <div class="stat-text">Properties sold</div>
+                </div>
+              </div>
+            </div>
+            <dialog id="dialog">
+              <div type="submit" aria-label="close" id="close" formnovalidate>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+
+              <!-- Pop-up Content -->
+              <div class="dialog-content" aria-label="dialog-content">
+                <h2>About Us</h2>
+                <div class="text">
+                  Our firm is a dynamic fusion of seasoned legal professionals
+                  and dedicated real estate experts, offering a comprehensive
+                  suite of services designed to meet all your legal and property
+                  needs. At the core of our practice is a team of accomplished
+                  attorneys, each bringing a wealth of knowledge and experience
+                  in diverse legal domains. We specialize in providing
+                  meticulous legal solutions tailored to your unique
+                  requirements. From navigating complex legal landscapes to
+                  crafting airtight contracts, we are committed to ensuring that
+                  your legal concerns are met with precision and expertise. Our
+                  legal team is driven by a passion for justice and a commitment
+                  to upholding the highest standards of integrity. Whether
+                  you're facing a challenging legal dispute or seeking proactive
+                  legal advice, trust us to be your dedicated advocates, guiding
+                  you through every step of the legal process. In the realm of
+                  real estate, we pride ourselves on delivering excellence that
+                  goes beyond expectations. Our real estate professionals bring
+                  in-depth market knowledge, strategic insights, and a
+                  commitment to achieving your property goals. Whether you are
+                  buying, selling, leasing, or investing, our team is
+                  well-equipped to navigate the dynamic real estate landscape on
+                  your behalf. From residential properties to commercial
+                  ventures, we offer a personalized approach that considers
+                  every aspect of your real estate journey. Our excellence
+                  extends to meticulous property evaluations, negotiation
+                  prowess, and a keen understanding of market trends, ensuring
+                  that your real estate transactions are seamless and
+                  successful. At
+                  <strong>F.U.E Efetie & Co.</strong>, our commitment is rooted
+                  in the belief that true success lies in the satisfaction and
+                  success of our clients. We understand that legal matters and
+                  real estate transactions can be intricate and demanding, which
+                  is why we are dedicated to providing comprehensive solutions
+                  that empower you to make informed decisions. Whether you seek
+                  legal advice, require representation, or are embarking on a
+                  real estate endeavor, rest assured that our team is here to
+                  serve you with integrity, excellence, and a steadfast
+                  commitment to achieving optimal outcomes. Experience the
+                  synergy of Legal Expertise and Real Estate Excellence at
+                  <strong>F.U.E Efetie & Co.</strong> — where your journey to
+                  legal and property success begins.
+                </div>
+              </div>
+              <!-- End of Pop-up Content -->
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+    <!-- Practice Section -->
+    <section class="practice" aria-label="practice section" id="practice">
+      <div class="practice-title" aria-label="practice-title">
+        Our Practice Area
+      </div>
+      <div class="flex-row">
+        <div class="practice-box flex-container" aria-label="practice-box">
+          <div class="practice-card flex-row">
+            <div class="icon-holder">
+              <span class="material-symbols-outlined custom-size"> gavel </span>
+            </div>
+            <div class="practice-title-card">Litigation</div>
+            <div class="practice-text">
+              The firm’s legal representation covers commercial adversarial
+              proceedings in the various jurisdictions including High Courts,
+              Court of Appeal, Supreme Court, Election Tribunals, Multi Door
+              Court Houses, Arbitral Proceedings, Registration and Enforcement
+              of foreign judgements, Arbitral Awards and Nigeria Judgements
+              abroad. Whilst alternative dispute resolution is explored to
+              resolving disputes amicably at any given opportunity.
+            </div>
+          </div>
+          <div class="practice-card flex-row">
+            <div class="icon-holder">
+              <span class="material-symbols-outlined custom-size">
+                personal_injury
+              </span>
+            </div>
+            <div class="practice-title-card">Oil & Gas</div>
+            <div class="practice-text">
+              Our firm is peopled with experienced personnel who advise Oil &
+              Gas companies on regulatory procedures in achieving their desired
+              objectives as related to the Oil & Gas sector. We also regularly
+              advise companies in the Oil & Gas sector and other listed
+              companies on their continuing obligations and corporate governance
+              issues. We are able to explain complex technical issues as they
+              relate to the Oil & gas sector with ease.
+            </div>
+          </div>
+          <div class="practice-card flex-row">
+            <div class="icon-holder">
+              <span class="material-symbols-outlined custom-size">
+                psychology
+              </span>
+            </div>
+            <div class="practice-title-card">INTELLECTUAL PROPERTY</div>
+            <div class="practice-text">
+              Our firm offers legal services and assists in the registration of
+              trademarks, service marks, patents, and industrial designs. We
+              represent our clients in any related legal proceedings.
+              Furthermore, we provide legal representatives for the enforcement
+              of established copyrights and infringement of registered
+              trademarks, service marks/patents, and individual designs in any
+              judicial proceedings
+            </div>
+          </div>
+          <div class="practice-card flex-row">
+            <div class="icon-holder">
+              <span class="material-symbols-outlined custom-size"> cases </span>
+            </div>
+            <div class="practice-title-card">CORPORATE AND COMMERCIAL LAW</div>
+            <div class="practice-text">
+              Our firm has a competent corporate and commercial unit offering
+              various legal services to our numerous corporate clients. We
+              engage in drafting of Memorandum and Articles of Associations for
+              incorporation of Companies, drafting of Constitution for
+              Non-Governmental Organizations (NGOs), Shareholders Agreement,
+              Memorandum of Understanding, Joint Venture Agreements, Merger and
+              Acquisition.
+            </div>
+          </div>
+          <div class="practice-card flex-row">
+            <div class="icon-holder">
+              <span class="material-symbols-outlined custom-size">
+                folder
+              </span>
+            </div>
+            <div class="practice-title-card">COMPANY SECRETARIAL SERVICES</div>
+            <div class="practice-text">
+              Our firm offers Company secretarial services to our client. This
+              complements the corporate services we offer to them. We ensure
+              that our clients comply with all the provisions of the Companies
+              and Allied Matters Act and other relevant Laws, thus avoiding the
+              adverse consequences of non-compliance with applicable Laws and
+              Regulations.
+            </div>
+          </div>
+          <div class="practice-card flex-row">
+            <div class="icon-holder">
+              <span class="material-symbols-outlined custom-size">
+                source_environment
+              </span>
+            </div>
+            <div class="practice-title-card">REAL ESTATE TRANSACTIONS</div>
+            <div class="practice-text">
+              Our firm has reliable personnel who handle Land procurement,
+              Documentation, Title Verification and Perfection at Land
+              Registries nationwide including obtaining Governor’s consent and
+              Certificate of Occupancy (C of O) and Real Estate services like
+              Letting, Sales, Purchase and Development of properties.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Practice Section -->
+    <!-- Lawyers Section -->
+    <section class="lawyers" id="lawyers">
+      <div class="lawyers-title">Meet Our Lawyers</div>
+      <div class="lawyers-container">
+        <div class="tabs flex-row">
+          <button class="tab active" data-id="efetie">
+            View Profile
+            <div class="mini-profile-pic active" data-id="pic1">
+              <img src="images/kai2.webp" alt="lawyer-img" />
+            </div>
+          </button>
+          <button class="tab" data-id="kolapo">
+            View Profile
+            <div class="mini-profile-pic active" data-id="pic1">
+              <img src="images/lawyerImageKola.webp" alt="lawyer-img" />
+            </div>
+          </button>
+          <button class="tab" data-id="gloria">
+            View Profile
+            <div class="mini-profile-pic active" data-id="pic1">
+              <img src="images/lawyerImageMadam.webp" alt="lawyer-img" />
+            </div>
+          </button>
+          <button class="tab" data-id="martin">
+            View Profile
+            <div class="mini-profile-pic active" data-id="pic1">
+              <img src="images/kai4.webp" alt="lawyer-img" />
+            </div>
+          </button>
+        </div>
+        <div class="tab-content active flex-row" id="efetie">
+          <div class="flex-container">
+            <div class="lawyer-card">
+              <div class="law-img-holder">
+                <img src="images/kai2.webp" alt="lawyer-img" />
+              </div>
+            </div>
+            <div class="lawyer-card">
+              <h2>Friday Efetie, Esq</h2>
+              <h5>PRINCIPAL PARTNER</h5>
+              <div class="lawyer-profile">
+                <strong>Friday Efetie, Esq.</strong> , stands as a consummate
+                legal luminary, boasting an extensive career marked by profound
+                expertise in corporate and commercial practices, tax laws,
+                energy laws, and general litigation. With a rich tapestry of
+                over 26 years in various facets of the law.Friday Efetie's
+                breadth of legal knowledge encompasses corporate and commercial
+                practices, tax laws, energy laws, and general litigation. His
+                well-rounded expertise positions him as a sought-after adviser
+                for clients across industries, with a particular focus on
+                providing strategic counsel in the manufacturing,
+                telecommunications, and oil & gas sectors. Friday Efetie pursued
+                his legal education at Edo State University, where he earned an
+                LL.B (HONS). His commitment to legal excellence was further
+                underscored by his successful completion of the Nigeria Law
+                School in Lagos in 1997, where he graduated with a B.L. (Second
+                Class Upper). He was subsequently called to the Nigerian Bar on
+                the 25th of February 1998.Friday Efetie is an esteemed member of
+                Nigerian Bar Association. His active participation in this
+                professional body reflects his commitment to staying abreast of
+                legal developments, networking with peers, and contributing to
+                the advancement of legal practices on national and international
+                fronts
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="kolapo">
+          <div class="flex-container">
+            <div class="lawyer-card">
+              <div class="law-img-holder">
+                <img src="images/lawyerImageKola.webp" alt="lawyer-img" />
+              </div>
+            </div>
+            <div class="lawyer-card">
+              <h2>Kola Akosile, Esq</h2>
+              <h5>PARTNER</h5>
+              <div class="lawyer-profile">
+                Kola Akosile, Esq. stands as a distinguished legal professional,
+                widely recognized for his multifaceted expertise acquired
+                through years of dedicated practice across various domains of
+                law. As the Managing Associate of F.U.E Efetie & Co., Kola has
+                etched an impressive career path marked by his commitment to
+                excellence and a comprehensive understanding of legal
+                intricacies. With a robust background in litigation, corporate
+                consultancy, taxation, oil & gas, debt recovery, dispute
+                resolution, and advocacy, Kola embodies a legal practitioner
+                with a broad spectrum of knowledge. His years of active practice
+                have provided him with a nuanced understanding of the
+                complexities within each legal sphere, allowing him to navigate
+                diverse legal landscapes with adeptness and insight.Kola Akosile
+                serves as the dynamic leader at the helm of the firm's
+                litigation team, steering it with finesse and strategic acumen.
+                His role as the head of the litigation team is characterized by
+                a commitment to delivering legal solutions that align with the
+                firm's values of integrity, thoroughness, and client
+                satisfaction. Under his leadership, the litigation team has
+                flourished, earning a reputation for its tenacity and
+                proficiency in handling complex legal disputes.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="gloria">
+          <div class="flex-container">
+            <div class="lawyer-card">
+              <div class="law-img-holder">
+                <img src="images/lawyerImageMadam.webp" alt="lawyer-img" />
+              </div>
+            </div>
+            <div class="lawyer-card">
+              <h2>Gloria Onyinyechi Ekeocha-Ibeji, Esq.</h2>
+              <h5>HEAD OF LITIGATION</h5>
+              <div class="lawyer-profile">
+                <strong> Gloria Onyinyechi Ekeocha-Ibeji, Esq.</strong> is a
+                seasoned and erudite Lawyer with a solid foundation in
+                commercial and corporate legal practice with specialty in
+                Labour, Tort and Human Right cases, she is also a trained Human
+                Resource professional. She is committed to using the law as a
+                tool to bring not only justice, but also for the development of
+                the society at large. She has a strong managerial, advocacy,
+                eloquence, counseling, researching, and drafting skills. She
+                attended Imo State University with LL.B (Hons) and Nigerian Law
+                School, Lagos Campus where she obtained her B.L and was called
+                to the Nigerian Bar in 2013. She also attended Piston and
+                Fission Business Academy where she got a certificate as a
+                trained Human Resource personnel. She is currently pursuing her
+                Masters (LL.M) degree and looking forward to being a Certified
+                Human Resource Professional after taking her PHRI certification
+                exams. She is a member of Nigerian Bar Association.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="martin">
+          <div class="flex-container">
+            <div class="lawyer-card">
+              <div class="law-img-holder">
+                <img src="images/kai4.webp" alt="lawyer-img" />
+              </div>
+            </div>
+            <div class="lawyer-card">
+              <h2>Martin Ekpeke</h2>
+              <h5>ADMINISTRATIVE MANAGER</h5>
+              <div class="lawyer-profile">
+                Martin is an accomplished Administrative Manager with a wealth
+                of experience in optimizing operational efficiency within legal
+                environments. With a strong background in office management,
+                Martin brings a strategic and detail-oriented approach to
+                overseeing administrative functions at F.U.E Efetie Law Firm. As
+                the Administrative Manager, he plays a pivotal role in ensuring
+                the seamless operation of day-to-day activities. His
+                responsibilities encompass a wide range of tasks, including
+                office organization, staff supervision, and resource allocation.
+                He is known for his ability to streamline processes, implement
+                effective workflow systems, and maintain a productive and
+                harmonious work environment. Martin's expertise extends to
+                managing legal administrative tasks, such as document
+                processing, case file management, and client communication. He
+                is adept at leveraging technology to enhance efficiency and is
+                always at the forefront of adopting the latest tools and
+                software to support the legal team.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Lawyers Section -->
+    <!-- Property Listing Section -->
+    <section class="listing" id="listing" aria-label="property listing">
+      <div class="listing-title">Property Listings</div>
+      <div class="sub-listing-title">We'll find the right home for you.</div>
+      <div class="flex-row">
+        <div class="listing-side flex-container">
+          <div class="listing-card">
+            <div class="listing-img-holder">
+              <img src="images/listing1.webp" alt="" />
+            </div>
+            <div class="listing-context-box">
+              <div class="listing-card-title">Island Properties</div>
+              <div class="listing-card-text">
+                Modern luxury meets the serene beauty of coastal living. Our
+                exquisite houses on the island redefine the art of sophisticated
+                living, offering a unique blend of elegance and comfort
+              </div>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="listing-img-holder">
+              <img src="images/listing2.webp" alt="" />
+            </div>
+            <div class="listing-context-box">
+              <div class="listing-card-title">Mainland Properties</div>
+              <div class="listing-card-text">
+                Contemporary homes seamlessly blend with the dynamic energy of
+                city life, they provide a lifestyle that perfectly balances
+                convenience and comfort.
+              </div>
+            </div>
+          </div>
+          <div class="listing-card">
+            <div class="listing-img-holder">
+              <img src="images/listing5.webp" alt="" />
+            </div>
+            <div class="listing-context-box">
+              <div class="listing-card-title">
+                Land Purchase & Documentation
+              </div>
+              <div class="listing-card-text">
+                Unlock the potential of your dreams with prime land
+                opportunities, embrace the promise of ownership and investment
+                as you step into the thriving real estate.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="primary-btn">View Properties Bulletin</div>
+    </section>
+    <!-- End of Property Listing Section -->
+    <!-- Contact Section -->
+    <section class="contact" id="contact" aria-label="contact section">
+      <div class="flex-row">
+        <div class="upper-contact flex-container">
+          <div class="contact-card">
+            <div class="card-text">
+              Are You in Trouble with any Case? Contact Us Today!
+            </div>
+            <div class="card-sub-text">
+              Welcome to F.U.E Efetie &Co., your trusted Partner in legal
+              matters. With a team of seasoned attorneys , we over comprehensive
+              legal services to clients across Nigeria and beyond.
+            </div>
+          </div>
+          <div class="contact-card">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=2348038179944"
+              ><div class="primary-btn">
+                <i class="bx bxl-whatsapp"></i>get in touch today
+              </div></a
+            >
+
+            <a href=""></a>
+            <div class="location">
+              <strong>Office Address:</strong> 13,Majekodumi street, off Allen
+              Avenue, Ikeja, Lagos.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="flex-row">
+        <div class="map-contact flex-container" id="map-contact">44444</div>
+      </div> -->
+      <iframe
+        src="https://www.google.com/maps/embed/v1/view?key=AIzaSyDzYHd6nejyUgJY_0ns5RqpuVQDdPu4e0M&center=6.5977682,3.3520884&zoom=20"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+      ></iframe>
+    </section>
+    <!-- End of Contact Section -->
+    <footer>
+      <div class="flex-row">
+        <div class="flex-container">
+          <div class="footer-card">
+            <div class="footer-logo">
+              <img src="images/secondary-logo.png" alt="" />
+            </div>
+            <div class="footer-text">
+              Delivering unparalleled legal expertise and real estate
+              excellence, our firm stands as a beacon of reliability and
+              proficiency.
+            </div>
+          </div>
+          <div class="footer-card flex-container">
+            <ul>
+              <li>Quick Links</li>
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about us</a></li>
+              <li><a href="#practice">practice area</a></li>
+              <li><a href="#lawyers">our lawyers</a></li>
+              <li><a href="#listing">property listing</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+            <ul>
+              <li>Company</li>
+              <li>Terms and Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Cookies Preferences</li>
+            </ul>
+          </div>
+          <div class="footer-card flex-container">
+            <ul>
+              <li>Location</li>
+              <li>13,Majekodumi street, off Allen Avenue, Ikeja, Lagos</li>
+              <li>Phone Number: +2348038179944</li>
+            </ul>
+            <ul>
+              <li>Social Media</li>
+              <li class="flex-row">
+                <div class="social-holder flex-container">
+                  <i class="bx bxl-facebook"></i>
+                </div>
+                <div class="social-holder"><i class="bx bxl-linkedin"></i></div>
+                <div class="social-holder"><i class="bx bxl-twitter"></i></div>
+                <div class="social-holder">
+                  <i class="bx bxl-instagram"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="app.js"></script>
+</html>
