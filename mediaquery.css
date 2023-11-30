@@ -119,7 +119,9 @@
   .tab:nth-child(4) .mini-profile-pic {
     top: 9.9rem; /**/
   }
-
+  .tab {
+    flex-basis: 100%;
+  }
   /* -------------End of Lawyers Section------------ */
   /* ---------Property Listing Section----------- */
 
@@ -167,9 +169,377 @@
   header {
     display: none;
   }
+  /* -------------Hero Section--------------- */
+  .hero {
+    width: 100%;
+    color: white; /**/
+    background-image: none; /**/
+  }
+
+  .hero-title {
+    font-size: 4rem; /**/
+    text-align: start;
+  }
+  .sub-hero-title {
+    font-size: 2.8rem; /**/
+  }
+  .text-exerp-hero {
+    text-align: justify;
+    line-height: 1.1;
+    font-size: 1.5rem;
+  }
+  .card {
+    width: 100%; /**/
+    padding: 1rem 0; /**/
+    font-weight: 400;
+    padding-right: 0rem; /**/
+  }
+  .hero .flex-container {
+    flex-direction: row;
+  }
+  .hero-image-holder {
+    width: 100%; /**/
+    height: 60vh; /**/
+    top: 0rem; /**/
+    right: 0%; /**/
+    z-index: -9; /**/
+  }
+  /* -------------End of Hero Section--------------- */
+  /* ---------About Section----------- */
+  .about {
+    margin: -14rem 0 0 0; /**/
+  }
+  .about .flex-row {
+    justify-content: flex-start;
+    gap: 0.4rem;
+  }
+
+  .about-card:nth-child(1) {
+    width: 0%;
+  }
+  .about-card {
+    width: 97%;
+    font-size: 1rem; /**/
+  }
+
+  /* -----------End of About Section------------- */
+  /* Pop-up Dialog */
+
+  dialog {
+    width: 90%; /**/
+    font-size: 1rem;
+  }
+
+  /* End of Pop-up Dialog */
+  .stat-card {
+    margin: 1rem 0 1rem 0; /**/
+    flex-basis: 150px; /**/
+  }
+  .stat-title {
+    font-size: 2rem; /**/
+  }
+
+  /* -------------Practice Section----- */
+
+  .practice-title {
+    font-size: 2rem; /**/
+    padding: 1.5rem; /**/
+    text-align: center;
+  }
+  .practice-card {
+    height: 100%; /**/
+    max-height: 100%; /**/
+    text-align: justify;
+  }
+
+  /* ---------End of Practice Section--------- */
+  /* ---------Lawyers Section--------- */
+  .lawyers {
+    padding: 2rem 5%; /**/
+
+    /* background-color: #d8dff7; */
+  }
+  .lawyers-title {
+    font-size: 2rem; /**/
+    font-weight: 500;
+  }
+
+  .lawyer-card {
+    flex-basis: 300px; /**/
+    width: 100%; /**/
+  }
+  .law-img-holder {
+    height: 600px;
+    width: 100%; /**/
+  }
+
+  .mini-profile-pic {
+    width: 50px; /**/
+    height: 50px; /**/
+
+    top: -1.5rem; /**/
+  }
+  .tab:nth-child(2) .mini-profile-pic {
+    top: -1.5rem; /**/
+  }
+  .tab:nth-child(3) .mini-profile-pic {
+    top: 2.5rem; /**/
+  }
+  .tab:nth-child(4) .mini-profile-pic {
+    top: 2.5rem; /**/
+  }
+  .tab {
+    flex-basis: 50%;
+  }
+  .tab-content .flex-container {
+    margin-block-start: 5rem;
+    flex-direction: column;
+  }
+  /* -------------End of Lawyers Section------------ */
+  /* ---------Property Listing Section----------- */
+
+  .listing-side {
+    margin: 2rem 5%; /**/
+  }
+
+  .listing-title {
+    font-size: 2rem; /**/
+    padding: 0.5rem; /**/
+    text-align: center;
+  }
+  .sub-listing-title {
+    font-size: 1.5rem; /**/
+    padding: 0.5rem; /**/
+    text-align: center;
+  }
+  .listing-context-box {
+    padding: 1rem;
+  }
+  .listing-card {
+    flex-basis: 100%;
+  }
+  /* ------------End of Property Listing Section------------- */
+  /* -----------Contact Section-------------------- */
+  .contact {
+    margin-block-start: 3rem; /**/
+    /* margin-block-end: 2rem; */
+    width: 100%;
+    scroll-margin-top: 70px;
+  }
+  .upper-contact {
+    background-image: none;
+    background-color: #a8bbfa;
+  }
+  .map-contact {
+    height: 45vh;
+  }
+
+  .card-text {
+    font-size: 2rem; /**/
+  }
+
+  /* -----------------End of Contact Section---------------- */
 }
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   header {
-    display: none;
+    display: block;
   }
+  /* -------------Hero Section--------------- */
+  .hero {
+    width: 100%;
+    height: 50vh; /**/
+    background-image: url(images/heroBg.webp);
+    background-position: 20% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 5%;
+    margin-top: 4rem;
+    position: relative;
+  }
+  .hero-tag {
+    display: inline;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 0.4rem;
+    font-weight: 500;
+    background-color: #ffce53;
+  }
+  .hero-title {
+    font-size: 4rem; /**/
+    font-weight: 500;
+    line-height: 1;
+  }
+  .sub-hero-title {
+    font-size: 2.5rem; /**/
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .card {
+    width: 50%;
+    padding: 1rem 0;
+    font-weight: 400;
+    padding-right: 3rem;
+  }
+  .hero .flex-container {
+    flex-direction: row;
+  }
+  .hero-image-holder {
+    width: 400px; /**/
+    height: 300px; /**/
+    background-image: url(images/heroImage.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 15rem;
+    right: 5%;
+  }
+  .hero-image-holder::before {
+    content: "";
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/boxBg.webp);
+    background-repeat: no-repeat;
+    top: 16rem; /**/
+    right: 1.5rem;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  /* -------------End of Hero Section--------------- */
+  /* ---------About Section----------- */
+  .about {
+    margin: 8rem 0 0 0; /**/
+  }
+  .about .flex-row {
+    justify-content: flex-start;
+    gap: 0.4rem;
+  }
+
+  .about-card:nth-child(1) {
+    width: 0%;
+  }
+  .about-card {
+    width: 97%;
+    font-size: 1rem; /**/
+  }
+
+  /* -----------End of About Section------------- */
+  /* Pop-up Dialog */
+
+  dialog {
+    width: 90%; /**/
+    font-size: 1rem;
+  }
+
+  /* End of Pop-up Dialog */
+  .stat-card {
+    margin: 1rem 0 1rem 0; /**/
+    flex-basis: 150px; /**/
+  }
+  .stat-title {
+    font-size: 2rem; /**/
+  }
+
+  /* -------------Practice Section----- */
+
+  .practice-title {
+    font-size: 2rem; /**/
+    padding: 1.5rem; /**/
+    text-align: center;
+  }
+  .practice-card {
+    height: 100%; /**/
+    max-height: 100%; /**/
+    text-align: justify;
+  }
+
+  /* ---------End of Practice Section--------- */
+  /* ---------Lawyers Section--------- */
+  .lawyers {
+    padding: 2rem 5%; /**/
+
+    /* background-color: #d8dff7; */
+  }
+  .lawyers-title {
+    font-size: 2rem; /**/
+    font-weight: 500;
+  }
+
+  .lawyer-card {
+    flex-basis: 300px; /**/
+    width: 100%; /**/
+  }
+  .law-img-holder {
+    height: 700px;
+    width: 100%; /**/
+  }
+
+  .mini-profile-pic {
+    width: 50px; /**/
+    height: 50px; /**/
+
+    top: -1.5rem; /**/
+  }
+  .tab:nth-child(2) .mini-profile-pic {
+    top: -1.5rem; /**/
+  }
+  .tab:nth-child(3) .mini-profile-pic {
+    top: 2.5rem; /**/
+  }
+  .tab:nth-child(4) .mini-profile-pic {
+    top: 2.5rem; /**/
+  }
+  .tab {
+    flex-basis: 50%;
+  }
+  .tab-content .flex-container {
+    margin-block-start: 5rem;
+    flex-direction: column;
+  }
+  /* -------------End of Lawyers Section------------ */
+  /* ---------Property Listing Section----------- */
+
+  .listing-side {
+    margin: 2rem 5%; /**/
+  }
+
+  .listing-title {
+    font-size: 2rem; /**/
+    padding: 0.5rem; /**/
+    text-align: center;
+  }
+  .sub-listing-title {
+    font-size: 1.5rem; /**/
+    padding: 0.5rem; /**/
+    text-align: center;
+  }
+  .listing-context-box {
+    padding: 1rem;
+  }
+  .listing-card {
+    flex-basis: 48%;
+  }
+  /* ------------End of Property Listing Section------------- */
+  /* -----------Contact Section-------------------- */
+  .contact {
+    margin-block-start: 3rem; /**/
+    /* margin-block-end: 2rem; */
+    width: 100%;
+    scroll-margin-top: 70px;
+  }
+  .upper-contact {
+    background-image: none;
+    background-color: #a8bbfa;
+  }
+  .map-contact {
+    height: 45vh;
+  }
+
+  .card-text {
+    font-size: 2rem; /**/
+  }
+
+  /* -----------------End of Contact Section---------------- */
 }
