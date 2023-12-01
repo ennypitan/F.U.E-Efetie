@@ -18,14 +18,24 @@ menuIcon.addEventListener("click", () => {
 
 // Dialog Pop-up
 const dialog = document.getElementById("dialog");
+const dialog1 = document.getElementById("dialog1");
 const closeButton = document.getElementById("close", "::backdrop");
+const closeButton1 = document.getElementById("close1", "::backdrop");
 const openButton = document.getElementById("primary-btn");
+const openBulletin = document.getElementById("primary-bulletin");
 
 openButton.addEventListener("click", () => {
   console.log("clicked");
   dialog.showModal();
 });
+openBulletin.addEventListener("click", () => {
+  console.log("clicked");
+  dialog1.showModal();
+});
 
+closeButton1.addEventListener("click", () => {
+  dialog1.close();
+});
 closeButton.addEventListener("click", () => {
   dialog.close();
 });
@@ -33,6 +43,11 @@ closeButton.addEventListener("click", () => {
 dialog.addEventListener("click", (event) => {
   if (event.target === dialog) {
     dialog.close();
+  }
+});
+dialog1.addEventListener("click", (event) => {
+  if (event.target === dialog1) {
+    dialog1.close();
   }
 });
 // links scroll

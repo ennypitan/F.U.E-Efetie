@@ -396,11 +396,24 @@ dialog {
   background-color: whitesmoke;
   position: fixed;
 }
-#close {
+.listing dialog {
+  width: 90%;
+  height: 95vh;
+  padding: 2rem;
+  border: none;
+  margin: auto;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  position: fixed;
+}
+#close,
+#close1 {
   position: absolute;
   right: 2rem;
 }
-#close i {
+#close i,
+#close1 i {
   font-size: 2rem;
   border: none;
   background-color: none;
@@ -689,6 +702,14 @@ dialog {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.listing-pop-img-holder {
+  width: 100%;
+  height: 20vh;
+  background-image: url(images/listing3.webp);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: 95% 50%;
+}
 /* ------------End of Property Listing Section------------- */
 /* -----------Contact Section-------------------- */
 .contact {
@@ -821,5 +842,66 @@ footer ul li:nth-child(1) {
   }
   100% {
     transform: translateX(100px);
+  }
+}
+
+/* -------------Listing Table------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(188 194 195 / 15%);
+}
+
+th {
+  background-color: rgba(32, 90, 137, 1);
+  color: #ffc300;
+}
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: rgba(32, 90, 137, 1);
+  color: #ffc300;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  th[colspan="5"] {
+    background-color: rgba(255, 195, 0, 0.2);
+    backdrop-filter: brightness(150%);
+    color: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 10px;
+  }
+
+  th,
+  td {
+    padding: 5px;
   }
 }

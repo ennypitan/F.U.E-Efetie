@@ -160,8 +160,12 @@
     scroll-margin-top: 70px;
   }
   .upper-contact {
+    height: 50vh;
     background-image: none;
     background-color: #a8bbfa;
+  }
+  .location {
+    bottom: 0rem;
   }
   .map-contact {
     height: 45vh;
@@ -174,8 +178,16 @@
   /* -----------------End of Contact Section---------------- */
 }
 @media screen and (max-width: 768px) and (min-width: 481px) {
-  header {
+  .menu-bar,
+  nav .primary-btn {
     display: none;
+  }
+  .hamburger-side,
+  .mobile-overlay {
+    display: block;
+  }
+  .logo img {
+    width: 70%;
   }
   /* -------------Hero Section--------------- */
   .hero {
@@ -335,8 +347,12 @@
     scroll-margin-top: 70px;
   }
   .upper-contact {
+    height: 30vh;
     background-image: none;
     background-color: #a8bbfa;
+  }
+  .location {
+    bottom: 0rem;
   }
   .map-contact {
     height: 45vh;
@@ -349,8 +365,16 @@
   /* -----------------End of Contact Section---------------- */
 }
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-  header {
+  .menu-bar,
+  nav .primary-btn {
+    display: none;
+  }
+  .hamburger-side,
+  .mobile-overlay {
     display: block;
+  }
+  .logo img {
+    width: 70%;
   }
   /* -------------Hero Section--------------- */
   .hero {
@@ -538,13 +562,16 @@
     scroll-margin-top: 70px;
   }
   .upper-contact {
+    height: 30vh;
     background-image: none;
     background-color: #a8bbfa;
   }
   .map-contact {
     height: 45vh;
   }
-
+  .location {
+    bottom: 0rem;
+  }
   .card-text {
     font-size: 2rem; /**/
   }
