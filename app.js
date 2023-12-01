@@ -1,3 +1,9 @@
+//AOS Animation
+
+AOS.init({
+  duration: 2000,
+  once: true,
+});
 // Dialog Pop-up
 const dialog = document.getElementById("dialog");
 const closeButton = document.getElementById("close", "::backdrop");
@@ -97,19 +103,18 @@ initMap();
 
 //  JavaScript to add the loader after a delay
 
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    // Create and append the loader div
-    var loader = document.createElement("div");
-    loader.className = "loader";
-    loader.innerHTML = ` <div class="spinner"></div><div class="logo" aria-label="logo">
-            <img src="images/primary-logo.png" alt="" />
-          </div>`;
-    document.body.appendChild(loader);
+// window.addEventListener("load", function () {
+//   // Create and append the loader div
+//   var loader = document.createElement("div");
+//   loader.className = "loader";
+//   loader.innerHTML = ` <div class="spinner"></div><div class="logo" aria-label="logo">
+//             <img src="images/primary-logo.png" alt="" />
+//           </div>`;
+//   document.body.appendChild(loader);
 
-    // Optional: Hide the loader after a certain time (e.g., 5 seconds)
-    setTimeout(function () {
-      loader.style.display = "none";
-    }, 3000); // Adjust the time as needed
-  }, 0); // 3 seconds delay
-});
+//   // Optional: Hide the loader after a certain time (e.g., 5 seconds)
+//   setTimeout(function () {
+//     loader.style.display = "none";
+//   }, 3000); // Adjust the time as needed
+//   // 3 seconds delay
+// });

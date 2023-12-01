@@ -28,6 +28,8 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -61,15 +63,15 @@
     <!-- Hero Section -->
     <section class="hero" aria-label="hero" id="home">
       <div class="hero-tag" aria-label="hero-tag">#1 law firm in Nigeria</div>
-      <div class="hero-title flex-row" aria-label="hero-title">
+      <div class="hero-title flex-row animate-pop-in" aria-label="hero-title">
         Legal Expertise, Real Estate Excellence.
       </div>
-      <div class="sub-hero-title" aria-label="sub-hero-title">
+      <div class="sub-hero-title animate-pop-in" aria-label="sub-hero-title">
         We raise the <sup>bar</sup>
       </div>
       <div class="text-exerp-hero flex-row">
         <div class="flex-container">
-          <div class="card">
+          <div class="card animate-pop-in">
             Delivering unparalleled legal expertise and real estate excellence,
             our firm stands as a beacon of reliability and proficiency. With a
             team of seasoned legal professionals and real estate specialists, we
@@ -92,7 +94,7 @@
         About Us
       </div>
       <div class="flex-row">
-        <div class="about-text flex-container">
+        <div class="about-text flex-container" data-aos="fade-right">
           <div class="about-card"></div>
           <div class="about-card">
             Our firm is a dynamic fusion of seasoned legal professionals and
@@ -108,7 +110,7 @@
             <div class="primary-btn" id="primary-btn" aria-label="primary-btn">
               Read More
             </div>
-            <div class="sub-about-text flex-row">
+            <div class="sub-about-text flex-row" data-aos="fade-left">
               <div class="flex-container">
                 <div class="stat-card">
                   <div class="stat-title">1000+</div>
@@ -194,7 +196,7 @@
       </div>
       <div class="flex-row">
         <div class="practice-box flex-container" aria-label="practice-box">
-          <div class="practice-card flex-row">
+          <div class="practice-card flex-row" data-aos="zoom-in-up">
             <div class="icon-holder">
               <span class="material-symbols-outlined custom-size"> gavel </span>
             </div>
@@ -209,7 +211,7 @@
               resolving disputes amicably at any given opportunity.
             </div>
           </div>
-          <div class="practice-card flex-row">
+          <div class="practice-card flex-row" data-aos="zoom-in-up">
             <div class="icon-holder">
               <span class="material-symbols-outlined custom-size">
                 personal_injury
@@ -226,7 +228,7 @@
               relate to the Oil & gas sector with ease.
             </div>
           </div>
-          <div class="practice-card flex-row">
+          <div class="practice-card flex-row" data-aos="zoom-in-up">
             <div class="icon-holder">
               <span class="material-symbols-outlined custom-size">
                 psychology
@@ -243,7 +245,7 @@
               judicial proceedings
             </div>
           </div>
-          <div class="practice-card flex-row">
+          <div class="practice-card flex-row" data-aos="zoom-in-up">
             <div class="icon-holder">
               <span class="material-symbols-outlined custom-size"> cases </span>
             </div>
@@ -258,7 +260,7 @@
               Acquisition.
             </div>
           </div>
-          <div class="practice-card flex-row">
+          <div class="practice-card flex-row" data-aos="zoom-in-up">
             <div class="icon-holder">
               <span class="material-symbols-outlined custom-size">
                 folder
@@ -274,7 +276,7 @@
               Regulations.
             </div>
           </div>
-          <div class="practice-card flex-row">
+          <div class="practice-card flex-row" data-aos="zoom-in-up">
             <div class="icon-holder">
               <span class="material-symbols-outlined custom-size">
                 source_environment
@@ -362,12 +364,16 @@
         </div>
         <div class="tab-content" id="kolapo">
           <div class="flex-container">
-            <div class="lawyer-card">
+            <div
+              class="lawyer-card"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-center"
+            >
               <div class="law-img-holder">
                 <img src="images/lawyerImageKola.webp" alt="lawyer-img" />
               </div>
             </div>
-            <div class="lawyer-card">
+            <div class="lawyer-card" data-aos="fade-up">
               <h2>Kola Akosile, Esq</h2>
               <h5>PARTNER</h5>
               <div class="lawyer-profile">
@@ -612,6 +618,7 @@
       </div>
     </footer>
   </body>
-
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="app.js"></script>
 </html>

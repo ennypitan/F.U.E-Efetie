@@ -670,3 +670,48 @@ footer ul li:nth-child(1) {
   color: white;
 }
 /* ----------------End of Footer Section------------ */
+/* -------------------Animation------------------ */
+.animate-pop-in {
+  -webkit-animation: pop-in 6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  animation: pop-in 6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem) scale(0.8);
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem) scale(0.8);
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.slide-right {
+  animation: slide-right 2.2s linear 0.2s 1 normal none;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
