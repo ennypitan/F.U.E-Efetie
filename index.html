@@ -52,12 +52,48 @@
             <li><a href="#listing">property listing</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
+          <div class="hamburger-side">
+            <div class="hamburger">
+              <span class="top-bar"></span>
+              <span class="bottom-bar"></span>
+            </div>
+          </div>
           <div class="primary-btn" aria-label="primary-btn">
             <span class="material-symbols-outlined custom-s"> call </span>
             Call Us Today
           </div>
         </div>
       </nav>
+      <!-- ================== Responsiveness Section ================================ -->
+      <div class="mobile-nav">
+        <div class="hamburger-side">
+          <div class="hamburger">
+            <span class="top-bar"></span>
+            <span class="bottom-bar"></span>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-overlay">
+        <ul class="mobile-menu">
+          <ul aria-label="mobile-menu-bar">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#practice">practice area</a></li>
+            <li><a href="#lawyers">our lawyers</a></li>
+            <li><a href="#listing">property listing</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <li><img src="images/primary-logo.png" alt="" /></li>
+          <li>
+            <div class="mobile-icons">
+              <i class="bx bxl-facebook"></i>
+              <i class="bx bxl-instagram"></i>
+              <i class="bx bxl-twitter"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- ================== End of Responsiveness Section ================================ -->
     </header>
     <!-- End of Header -->
     <!-- Hero Section -->
@@ -326,13 +362,13 @@
           </button>
         </div>
         <div class="tab-content active flex-row" id="efetie">
-          <div class="flex-container">
+          <div class="flex-container" data-aos="fade-right">
             <div class="lawyer-card">
               <div class="law-img-holder">
                 <img src="images/kai2.webp" alt="lawyer-img" />
               </div>
             </div>
-            <div class="lawyer-card">
+            <div class="lawyer-card" data-aos="fade-left">
               <h2>Friday Efetie, Esq</h2>
               <h5>PRINCIPAL PARTNER</h5>
               <div class="lawyer-profile">
@@ -364,11 +400,7 @@
         </div>
         <div class="tab-content" id="kolapo">
           <div class="flex-container">
-            <div
-              class="lawyer-card"
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-center"
-            >
+            <div class="lawyer-card" data-aos="fade-up">
               <div class="law-img-holder">
                 <img src="images/lawyerImageKola.webp" alt="lawyer-img" />
               </div>

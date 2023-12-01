@@ -1,6 +1,14 @@
 @media screen and (max-width: 480px) and (min-width: 320px) {
-  header {
+  .menu-bar,
+  nav .primary-btn {
     display: none;
+  }
+  .hamburger-side,
+  .mobile-overlay {
+    display: block;
+  }
+  .logo img {
+    width: 70%;
   }
   /* -------------Hero Section--------------- */
   .hero {

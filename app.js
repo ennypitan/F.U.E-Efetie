@@ -4,6 +4,18 @@ AOS.init({
   duration: 2000,
   once: true,
 });
+
+//Responsive menu
+
+const menuIcon = document.querySelector(".hamburger");
+const menuList = document.querySelector(".mobile-overlay");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("active");
+  menuList.classList.toggle("active");
+  console.log("clicked");
+});
+
 // Dialog Pop-up
 const dialog = document.getElementById("dialog");
 const closeButton = document.getElementById("close", "::backdrop");
