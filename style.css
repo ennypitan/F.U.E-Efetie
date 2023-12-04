@@ -111,7 +111,7 @@ nav {
   scroll-margin-top: 50px;
 }
 .logo {
-  width: 200px;
+  width: 150px;
 }
 .logo img {
   width: 100%;
@@ -304,7 +304,7 @@ nav a.active {
   background-color: #ffce53;
 }
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 500;
   line-height: 1;
 }
