@@ -566,7 +566,7 @@ dialog {
 }
 .law-img-holder {
   width: 80%;
-  height: 400px;
+  min-height: 400px;
   position: relative;
 }
 .law-img-holder::after {
