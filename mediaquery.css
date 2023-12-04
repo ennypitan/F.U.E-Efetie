@@ -89,6 +89,7 @@
   .practice-card {
     height: 100%; /**/
     max-height: 100%; /**/
+    flex-basis: 100%;
     text-align: justify;
   }
 
@@ -262,6 +263,7 @@
   /* -------------Practice Section----- */
 
   .practice-title {
+    flex-basis: 32%;
     font-size: 2rem; /**/
     padding: 1.5rem; /**/
     text-align: center;
@@ -269,6 +271,7 @@
   .practice-card {
     height: 100%; /**/
     max-height: 100%; /**/
+    flex-basis: 48%;
     text-align: justify;
   }
 
@@ -484,6 +487,7 @@
   .practice-card {
     height: 100%; /**/
     max-height: 100%; /**/
+    flex-basis: 32%;
     text-align: justify;
   }
 

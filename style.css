@@ -482,9 +482,9 @@ dialog {
   text-align: center;
 }
 .practice-card {
-  flex-basis: 300px;
-  height: 400px;
-  max-height: 400px;
+  flex-basis: 32%;
+  height: 450px;
+  min-height: 400px;
   flex-grow: 1;
   padding: 1rem;
   text-align: justify;
