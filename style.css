@@ -277,8 +277,8 @@ nav a.active {
 }
 .mobile-icons {
   position: absolute;
-  bottom: 5rem;
-  right: 2rem;
+  bottom: 5.1rem;
+  right: 2.1rem;
 }
 
 /* ============================= End of Responsiveness Section ====================================== */
@@ -292,7 +292,7 @@ nav a.active {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem 5%;
-  margin-top: 4rem;
+  margin-top: 4.1rem;
   position: relative;
 }
 .hero-tag {
@@ -304,7 +304,7 @@ nav a.active {
   background-color: #ffce53;
 }
 .hero-title {
-  font-size: 6rem;
+  font-size: 6.1rem;
   font-weight: 500;
   line-height: 1;
 }
@@ -351,7 +351,7 @@ nav a.active {
 /* ---------About Section----------- */
 .about {
   margin: 8rem 0 0 0;
-  padding: 4rem 5%;
+  padding: 4.1rem 5%;
   scroll-behavior: smooth;
   scroll-margin-top: 50px;
 }
