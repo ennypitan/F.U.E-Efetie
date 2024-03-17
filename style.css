@@ -770,13 +770,13 @@ dialog {
 /* --------------Footer Section------------------ */
 footer {
   width: 100%;
-  padding: 2rem 5%;
+  padding: 2.1rem 5%;
   background-color: #1b1725;
   color: rgb(182, 177, 177);
   font-size: 14px;
 }
 footer .flex-container {
-  gap: 2rem;
+  gap: 2.1rem;
 }
 .footer-logo {
   width: 60%;
@@ -809,9 +809,9 @@ footer li .flex-row {
   align-items: center;
 }
 footer ul li:nth-child(1) {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
   color: white;
 }
 /* ----------------End of Footer Section------------ */
